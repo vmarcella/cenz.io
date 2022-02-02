@@ -1,4 +1,5 @@
 # cenz.io
+A personal website.
 
 ## Project setup
 ```
