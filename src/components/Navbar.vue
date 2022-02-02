@@ -1,17 +1,15 @@
 <template>
-  <div> 
+  <div>
     <ul>
       <li><a>Home</a></li>
     </ul>
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component';
 
-export default { 
-  name: 'Navbar'
-}
-
+export default class NavBar extends Vue {}
 </script>
 
 <style local>
