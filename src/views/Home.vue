@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <img alt="Vue logo" src="../assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
     <Navbar />
   </div>
 </template>
@@ -14,7 +14,7 @@ import Navbar from '@/components/Navbar.vue';
 @Options({
   components: {
     HelloWorld,
-    Navbar
+    Navbar,
   },
 })
 export default class Home extends Vue {}
