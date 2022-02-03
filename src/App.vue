@@ -27,7 +27,14 @@
 }
 
 body {
-  -webkit-animation: bgcolor 20s infinite;
+  -animation: bgcolor 30s infinite;
+  -o-animation-direction: alternate;
+
+  -moz-animation: bgcolor 30s infinite;
+  -moz-animation-direction: alternate;
+
+  -webkit-animation: bgcolor 30s infinite;
+  -webkit-animation-direction: alternate;
 }
 
 #app {
