@@ -1,6 +1,6 @@
 <template>
   <div id="navbar">
-    <ul class="navbar-items">
+    <ul id="navbar-items">
       <li class="navbar-item"><router-link to="/">Home</router-link></li>
       <li class="navbar-item"><router-link to="/about">About</router-link></li>
       <li class="navbar-item"><router-link to="/contact">Contact</router-link></li>
@@ -17,14 +17,22 @@ export default class NavBar extends Vue {}
 <style local>
 
 #navbar {
-  width: 100%;
+  width: 50%;
+  margin: 0;
 }
 
 /* Navbar item styling */
-.navbar-items {
+#navbar-items {
   list-style-type: none;
+  padding: 0;
   background-color: #333;
   border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+
 }
 
 .navbar-item {
@@ -33,7 +41,6 @@ export default class NavBar extends Vue {}
 
 /* Navbar item links */
 .navbar-item a {
-
   display: block;
   color: white;
   text-align: center;

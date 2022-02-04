@@ -1,7 +1,5 @@
-<template>
-  <div style="width: {{width}}%; height: {{height}}%">
-  </div>
-
+<template lang="pug">
+div
 </template>
 
 <script lang="ts">
