@@ -1,6 +1,6 @@
 <template>
   <div id="header">
-    <h1>cenz.io</h1>
+    <h1 id="title">cenz.io</h1>
     <Navbar />
   </div>
   <router-view></router-view>
@@ -25,6 +25,13 @@ export default class App extends Vue {}
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 4em;
 }
 
 @keyframes bgcolor {

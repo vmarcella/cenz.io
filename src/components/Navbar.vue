@@ -17,8 +17,8 @@ export default class NavBar extends Vue {}
 <style local>
 
 #navbar {
-  width: 50%;
-  margin: 0;
+  width: 100%;
+  max-width: 500px;
 }
 
 /* Navbar item styling */
