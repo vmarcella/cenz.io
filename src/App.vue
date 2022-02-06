@@ -1,8 +1,31 @@
 <template>
+  <div id="header">
+    <h1>cenz.io</h1>
+    <Navbar />
+  </div>
   <router-view></router-view>
 </template>
 
+<script lang="ts">
+
+import { Options, Vue } from 'vue-class-component';
+import Navbar from '@/components/Navbar.vue';
+
+@Options({
+  components: { Navbar },
+})
+export default class App extends Vue {}
+
+</script>
+
 <style>
+
+#header {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
 
 @keyframes bgcolor {
   0% {

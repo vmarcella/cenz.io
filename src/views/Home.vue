@@ -1,18 +1,13 @@
 <template>
-  <Container />
-  <Navbar />
+  <div></div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import Navbar from '@/components/Navbar.vue';
-import Container from '@/components/Container.vue';
 
 @Options({
-  components: {
-    Navbar,
-    Container,
-  },
+  components: {},
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+}
 </script>
