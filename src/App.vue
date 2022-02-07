@@ -58,7 +58,7 @@ export default class App extends Vue {}
 
 body {
   -animation: bgcolor 30s infinite;
-  -o-animation-direction: alternate;
+  -animation-direction: alternate;
 
   -moz-animation: bgcolor 30s infinite;
   -moz-animation-direction: alternate;
