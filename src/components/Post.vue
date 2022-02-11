@@ -1,5 +1,6 @@
-<template lang="pug">
-
+<template>
+  <div class="post">
+  </div>
 </template>
 
 <script>

@@ -3,7 +3,9 @@
     <h1 id="title">cenz.io</h1>
     <Navbar />
   </div>
-  <router-view></router-view>
+  <div id="body">
+    <router-view></router-view>
+  </div>
 </template>
 
 <script lang="ts">
@@ -33,6 +35,8 @@ export default class App extends Vue {}
   margin-top: 5px;
   font-size: 4em;
 }
+
+#body { }
 
 @keyframes bgcolor {
   0% {
