@@ -3,7 +3,7 @@
     <PostPreview
       class="preview"
       v-for="post in posts"
-      :key="post.name"
+      :key=post.name
       :title=post.name
       :description=post.description
       :date=post.date />

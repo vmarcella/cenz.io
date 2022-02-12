@@ -7,13 +7,18 @@
 </template>
 
 <script lang="ts">
-import { Vue } from 'vue-class-component';
+import { Options, Vue } from 'vue-class-component';
+import { Prop } from 'vue-property-decorator';
 
+@Options({})
 export default class PostPreview extends Vue {
+  @Prop()
   title!: string;
 
+  @Prop()
   description!: string;
 
+  @Prop()
   date!: string;
 }
 </script>
