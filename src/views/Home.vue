@@ -1,7 +1,6 @@
 <template>
   <div id="post-previews">
     <PostPreview
-      class="preview"
       v-for="post in posts"
       :key=post.name
       :title=post.name
@@ -32,14 +31,6 @@ export default class Home extends Vue {
   gap: 5px;
   width: 50%;
   margin: auto;
-}
-
-.preview {
-  margin: auto;
-  min-width: 475px;
-  border-radius: 8px;
-  text-decoration: none;
-  padding: 20px;
 }
 
 </style>
