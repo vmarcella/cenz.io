@@ -1,8 +1,9 @@
 <template>
   <div id="navbar">
     <ul id="navbar-items">
-      <li class="navbar-item"><router-link to="/">Home</router-link></li>
       <li class="navbar-item"><router-link to="/about">About</router-link></li>
+      <li class="navbar-item"><router-link to="/projects">Projects</router-link></li>
+      <li class="navbar-item"><router-link to="/posts">Posts</router-link></li>
       <li class="navbar-item"><router-link to="/contact">Contact</router-link></li>
     </ul>
   </div>
@@ -44,7 +45,7 @@ export default class NavBar extends Vue {}
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 14px;
   text-decoration: none;
 }
 
