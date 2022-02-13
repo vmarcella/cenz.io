@@ -24,9 +24,16 @@ export default class PostPreview extends Vue {
 </script>
 
 <style scoped>
+
 .preview {
   background-color: #333;
   color: white;
+
+  margin: auto;
+  min-width: 475px;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 20px;
 }
 
 .title {
