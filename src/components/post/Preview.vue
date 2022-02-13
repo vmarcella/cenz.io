@@ -1,9 +1,9 @@
 <template>
-  <div class="preview">
+  <a class="preview" :href="linksTo">
     <h3 class="title">{{ title }}</h3>
     <p class="description">{{ description }}</p>
     <time>{{ date }}</time>
-  </div>
+  </a>
 </template>
 
 <script lang="ts">
@@ -20,6 +20,9 @@ export default class PostPreview extends Vue {
 
   @Prop()
   date!: string;
+
+  @Prop()
+  linksTo!: string;
 }
 </script>
 
