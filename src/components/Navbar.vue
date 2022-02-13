@@ -40,7 +40,6 @@ export default class NavBar extends Vue {}
   font-size: 2em;
 }
 
-/* Navbar item links */
 .navbar-item a {
   display: block;
   color: white;

@@ -1,6 +1,6 @@
 <template>
   <div id="header">
-    <h1 id="title">cenz.io</h1>
+    <router-link to="/" id="title">cenz.io</router-link>
     <Navbar />
   </div>
   <div id="body">
@@ -31,9 +31,11 @@ export default class App extends Vue { }
 }
 
 #title {
+  color: #333;
   margin-bottom: 5px;
   margin-top: 5px;
   font-size: 4em;
+  text-decoration: none;
 }
 
 #body { }
