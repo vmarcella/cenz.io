@@ -5,7 +5,9 @@
       :key=post.name
       :title=post.name
       :description=post.description
-      :date=post.date />
+      :date=post.date
+      :linksTo=post.linksTo
+      />
   </div>
 </template>
 
