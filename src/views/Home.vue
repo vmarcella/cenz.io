@@ -13,8 +13,8 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 
-import { GetAllPosts, PostData } from '@/components/Post.vue';
-import PostPreview from '@/components/PostPreview.vue';
+import { GetAllPosts, PostData } from '@/components/post/Post.vue';
+import PostPreview from '@/components/post/Preview.vue';
 
 @Options({
   components: { PostPreview },
