@@ -30,11 +30,16 @@ export default class Home extends Vue {
   justify-content: center;
   flex-direction: column;
   gap: 5px;
+  width: 50%;
+  margin: auto;
 }
 
 .preview {
-  width: 50%;
   margin: auto;
-  border: 20px;
+  min-width: 475px;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 20px;
 }
+
 </style>
