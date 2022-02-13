@@ -41,6 +41,7 @@ export default class NavBar extends Vue {}
 }
 
 .navbar-item a {
+  border-radius: 8px;
   display: block;
   color: white;
   text-align: center;
