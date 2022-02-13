@@ -1,13 +1,13 @@
 <template>
   <div>
-    This is the contact page.
+    This is the posts page.
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Options } from 'vue-class-component';
 
-export default class Contact extends Vue {}
+export default class Posts extends Vue {}
 
 </script>
 
