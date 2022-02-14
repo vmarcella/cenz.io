@@ -2,7 +2,7 @@
   <div id="about">
     <h2 id="about-header">About me</h2>
     <p id="about-description">
-      Hello, my name is Vincenzo!
+      Hello, I'm Vincenzo!
       I'm currently a Software Engineer at Microsoft with a passion for
       System Design, Software Architecture, and Optimization. I love talking
       about anything STEM related, and especially
