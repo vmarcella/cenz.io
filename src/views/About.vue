@@ -13,7 +13,7 @@
   </div>
   <div id="skills-achievements">
     <h2 id="skills-header">Skills & Achievements</h2>
-    <SkillTable :properties="{columnNames: skillColumns, skills: skills[0]}">
+    <SkillTable :properties="{columnNames: skillColumns, skills: skills[0].skills}">
     </SkillTable>
   </div>
 </template>
