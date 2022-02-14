@@ -13,15 +13,25 @@
   </div>
   <div id="skills-achievements">
     <h2 id="skills-header">Skills & Achievements</h2>
-
+    <SkillTable :properties="{columnNames: skillColumns, skills: skills[0]}">
+    </SkillTable>
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import { Prop } from 'vue-property-decorator';
+import SkillTable from '@/components/skills/SkillTable.vue';
+import { GetAllSkills } from '@/components/skills/Skill';
 
-export default class About extends Vue { }
+@Options({ components: { SkillTable } })
+export default class About extends Vue {
+  @Prop()
+  skills = GetAllSkills()
+
+  @Prop()
+  skillColumns = ['Name', 'Strength', 'Experience']
+}
 </script>
 
 <style scoped>
