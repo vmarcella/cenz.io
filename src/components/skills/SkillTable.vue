@@ -42,17 +42,18 @@ export default class SkillTable extends Vue {
 
 .skill-table-header {
   text-align: left;
-  width: 50%;
-  max-width: 550px;
+  width: 75%;
+  max-width: 650px;
   margin: auto;
   font-size: 2em;
+  text-decoration: underline;
 }
 
 .skill-table {
   table-layout: fixed;
   padding: 10px;
-  width: 50%;
-  max-width: 600px;
+  width: 75%;
+  max-width: 650px;
   margin: auto;
 }
 

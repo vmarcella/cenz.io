@@ -48,13 +48,19 @@ export default class About extends Vue {
 
 #about-header {
   margin-top: 5px;
+  width: 75%;
+  max-width: 650px;
   font-size: 2.5em;
   text-align: left;
+  margin: auto;
 }
 
 #about-description {
+  width: 75%;
+  max-width: 650px;
   font-size: 1.5em;
   text-align: left;
+  margin: auto;
 }
 
 #skills-achievements {
