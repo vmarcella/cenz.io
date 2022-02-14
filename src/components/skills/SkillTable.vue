@@ -1,6 +1,6 @@
 <template>
   <table class="skill-table">
-    <tr v-for="column in properties.columnNames" :key=column>{{column}}</tr>
+    <th v-for="column in properties.columnNames" :key=column>{{column}}</th>
     <Skill
       v-for="skill in properties.skills"
       :key=skill.name
@@ -34,7 +34,23 @@ export default class SkillTable extends Vue {
 <style scoped>
 
 .skill-table {
+  table-layout: fixed;
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+}
 
+.skill-table th {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.skill-table td {
+  padding: 5px;
+  text-align: center;
+  font-size: 1.25em;
 }
 
 </style>

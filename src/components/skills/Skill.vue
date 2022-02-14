@@ -21,7 +21,7 @@ export default class Skill extends Vue {
   experience!: number;
 
   @Prop()
-  strength = 0;
+  strength!: number;
 }
 </script>
 
