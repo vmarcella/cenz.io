@@ -33,7 +33,7 @@ export default class PostPreview extends Vue {
   color: white;
 
   margin: auto;
-  min-width: 475px;
+  max-width: 475px;
   border-radius: 8px;
   text-decoration: none;
   padding: 20px;
