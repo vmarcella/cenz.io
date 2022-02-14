@@ -27,8 +27,9 @@ export default class Skill extends Vue {
 
 <style scoped>
 
-.skill {
-
+.skill td {
+  font-size: 1.4em;
+  padding: 5px;
 }
 
 </style>

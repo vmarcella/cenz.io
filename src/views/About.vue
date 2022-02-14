@@ -18,7 +18,7 @@
       :key=skillMap.name
       :name=skillMap.name
       :columns=skillColumns
-      :skillMap=skillMap>
+      :skillMap=skillMap >
     </SkillTable>
   </div>
 </template>

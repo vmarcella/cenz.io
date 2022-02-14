@@ -1,5 +1,5 @@
 <template>
-  <h2>{{ name }}</h2>
+  <h2 class="skill-table-header">{{ name }}</h2>
   <table class="skill-table">
     <th v-for="column in columns" :key=column>{{column}}</th>
     <Skill
@@ -40,24 +40,27 @@ export default class SkillTable extends Vue {
 
 <style scoped>
 
+.skill-table-header {
+  text-align: left;
+  width: 50%;
+  max-width: 550px;
+  margin: auto;
+  font-size: 2em;
+}
+
 .skill-table {
   table-layout: fixed;
-  padding: 20px;
-  width: 100%;
+  padding: 10px;
+  width: 50%;
+  max-width: 600px;
   margin: auto;
 }
 
 .skill-table th {
   text-align: center;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.75em;
   text-decoration: underline;
-}
-
-.skill-table td {
-  padding: 5px;
-  text-align: center;
-  font-size: 1.25em;
 }
 
 </style>
