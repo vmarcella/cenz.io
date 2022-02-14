@@ -1,8 +1,9 @@
 <template>
+  <h2>{{ name }}</h2>
   <table class="skill-table">
-    <th v-for="column in properties.columnNames" :key=column>{{column}}</th>
+    <th v-for="column in columns" :key=column>{{column}}</th>
     <Skill
-      v-for="skill in properties.skills"
+      v-for="skill in skillMap.skills"
       :key=skill.name
       :name=skill.name
       :strength=skill.strength
@@ -12,21 +13,27 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
+import { Options, prop, Vue } from 'vue-class-component';
 import { Prop } from 'vue-property-decorator';
-import { SkillData } from '@/components/skills/Skill';
+import { SkillMap } from '@/components/skills/Skill';
 import Skill from '@/components/skills/Skill.vue';
 
 export interface SkillTableProperties {
   columnNames: Array<string>;
-  skills: Array<SkillData>;
+  skillMap: SkillMap;
 }
 
 /// Skill Table column.
 @Options({ components: { Skill } })
 export default class SkillTable extends Vue {
   @Prop()
-  properties!: SkillTableProperties;
+  name!: string;
+
+  @Prop()
+  columns!: Array<string>;
+
+  @Prop()
+  skillMap!: SkillMap;
 }
 
 </script>

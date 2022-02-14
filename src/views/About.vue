@@ -13,7 +13,12 @@
   </div>
   <div id="skills-achievements">
     <h2 id="skills-header">Skills & Achievements</h2>
-    <SkillTable :properties="{columnNames: skillColumns, skills: skills[0].skills}">
+    <SkillTable
+      v-for="skillMap in skillMaps"
+      :key=skillMap.name
+      :name=skillMap.name
+      :columns=skillColumns
+      :skillMap=skillMap>
     </SkillTable>
   </div>
 </template>
@@ -22,12 +27,12 @@
 import { Options, Vue } from 'vue-class-component';
 import { Prop } from 'vue-property-decorator';
 import SkillTable from '@/components/skills/SkillTable.vue';
-import { GetAllSkills } from '@/components/skills/Skill';
+import { GetAllSkillMaps } from '@/components/skills/Skill';
 
 @Options({ components: { SkillTable } })
 export default class About extends Vue {
   @Prop()
-  skills = GetAllSkills()
+  skillMaps = GetAllSkillMaps()
 
   @Prop()
   skillColumns = ['Name', 'Strength', 'Experience']
